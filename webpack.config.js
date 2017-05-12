@@ -1,4 +1,5 @@
 var path = require("path");
+var CopyWebpackplugin = require("copy-webpack-plugin");
 
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
@@ -10,6 +11,9 @@ var config = {
         filename: "bundle.js",
         publicPath: "/app/"
     },
+    plugins: [
+      new CopyWebpackplugin([{ from: 'src/app.css' , to: '../app.css' }])
+    ],
     module: {
         loaders: [
             {
