@@ -1,0 +1,180 @@
+html, body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #0099CC;
+    font-family: arial;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+p, ul {
+  color: #fff;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+p strong {
+  font-weight: bold;
+}
+
+.app {
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+/* Homepage */
+.card--home {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card--home__title {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 0.5em;
+  text-transform: lowercase;
+}
+
+.card--home__title strong {
+  font-weight: bold;
+}
+
+.card--home__icon {
+  color: #fff;
+}
+
+.card--home__desc {
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+/* nav menu */
+.menu {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 1em;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-right: none;
+  /*border-radius: 20px;*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.menu a.active {
+  background: #fff;
+  color: #0099CC;
+}
+
+.menu a:first-of-type {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.menu a:last-of-type {
+  border-right: 1px solid #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* footer bar */
+.footer-bar {
+  text-align: center;
+  font-size: 0.875em;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add goal form */
+#addGoalForm  {
+    margin-bottom: 1em;
+}
+
+#addGoalForm input[type=text] {
+  float: left;
+  width: 75%;
+  border: none;
+  -webkit-ppearance: none;
+  padding: 0.5em;
+  font-size: 1em;
+  height: 2em;
+}
+
+#addGoalForm input[type=submit]{
+  float: left;
+  width: 25%;
+  border: none;
+  -webkit-border-appearance: none;
+  padding: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: #F5B800;
+  height: 2em;
+}
+
+.card--goal {
+  color: #fff;
+}
+
+.card--goal .card--goal__name {
+	float: left;
+	width: 60%;
+}
+
+.card--goal .card--goal__actions {
+	float: left;
+	width: 40%;
+  text-align: right;
+}
+
+.card--goal .card--goal__actions i {
+  margin-left: 0.5em;
+  color: #fff;
+}
+
+/* card stats */
+.card--stats {
+  background: #007399;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.card--stats p {
+  margin-bottom: 0;
+}
+
+.card--stats p strong {
+  color: #F5B800;
+}
