@@ -10,7 +10,7 @@ import { About } from './components/About';
 class App extends React.Component {
   render(){
       return (
-        <Router>
+        <Router basename="/examples/goals-app-react">
           <div>
             <Route exact path="/" component={Home} />
             <Route path="/goals" component={Goals} />
