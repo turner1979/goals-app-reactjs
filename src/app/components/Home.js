@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 export class Home extends React.Component {
   render(){
@@ -11,6 +12,7 @@ export class Home extends React.Component {
             <h2 className="card--home__title">Goals<strong>App</strong></h2>
             <p className="card--home__desc">A simple app written with ReactJS for tracking your goals.</p>
           </div>
+          <Footer />
         </div>
       </div>
     );

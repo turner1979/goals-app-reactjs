@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 export class About extends React.Component {
   render(){
@@ -16,6 +17,7 @@ export class About extends React.Component {
             <li><i className="fa fa-check" aria-hidden="true"></i> Events</li>
             <li><i className="fa fa-check" aria-hidden="true"></i> Scalable Architecture</li>
           </ul>
+          <Footer />
         </div>
       </div>
     );

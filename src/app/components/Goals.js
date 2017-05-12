@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 // import some mock goals (these would come from the server in a real world app)
 import { GOALS } from '../mock-goals';
@@ -118,6 +119,7 @@ export class Goals extends React.Component {
               toggleComplete={this.toggleComplete.bind(this)}
             />
 
+            <Footer />
           </div>
         </div>
       );
