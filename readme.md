@@ -8,3 +8,9 @@
 ## Production
 
 1. In terminal run this command `npm run build:prod`
+
+**Important**
+
+Add the **basename** attribute to the router element for production to match the subdirectory on the server (if not serving the app from route)
+
+`<Router basename="/examples/goals-app-react">`
