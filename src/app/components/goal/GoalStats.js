@@ -16,7 +16,7 @@ export class GoalStats extends React.Component {
       <div className="card--stats">
         <p>You have <strong>{this.props.goals.length}</strong> goals in total.</p>
         <p>
-          <strong>{stats.completed}</strong> completed -&nbsp;
+          <strong>{stats.completed}</strong> completed, &nbsp;
           <strong>{stats.remaining}</strong> remaining.
         </p>
       </div>

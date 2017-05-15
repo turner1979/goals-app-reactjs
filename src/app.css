@@ -162,6 +162,19 @@ p strong {
   color: #fff;
 }
 
+.card--goal__confirm a {
+  float: right;
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  background: #aa0000;
+  color: #fff;
+}
+
+.card--goal__confirm a:first-of-type {
+    /*background: #aa0000;*/
+}
+
 /* card stats */
 .card--stats {
   background: #007399;
