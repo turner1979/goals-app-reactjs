@@ -3,8 +3,8 @@ import React from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 
-// import some mock goals (these would come from the server in a real world app)
-import { GOALS } from '../mock-goals';
+// import helper for gettting and setting localStorage data
+import { getGoals, setGoals } from '../goals-helper';
 
 // import goal components
 import { GoalStats } from './goal/GoalStats';
@@ -16,11 +16,23 @@ export class Goals extends React.Component {
   constructor(){
       super();
       this.state = {
-        goals: GOALS,
+        goals: [],
         currentGoal: '',
         currentGoalKey: null,
         isEditing: false
       }
+  }
+
+  componentDidMount(){
+
+    let goals = getGoals();
+
+    if(goals){
+      this.setState({
+        goals
+      });
+    }
+
   }
 
   updateCurrentGoal(e){
@@ -49,6 +61,8 @@ export class Goals extends React.Component {
       currentGoal: '',
       currentGoalKey: null
     });
+
+    setGoals(goals);
   }
 
   handleSubmit(e){
@@ -67,6 +81,8 @@ export class Goals extends React.Component {
         currentGoal: ''
       });
 
+      setGoals(goals);
+
     }
     else{
 
@@ -84,6 +100,8 @@ export class Goals extends React.Component {
         currentGoal: ''
       });
 
+      setGoals(goals);
+
     }
   }
 
@@ -94,6 +112,8 @@ export class Goals extends React.Component {
     this.setState({
       goals
     });
+
+    setGoals(goals);
 
   }
 

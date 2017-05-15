@@ -17,6 +17,7 @@ export class About extends React.Component {
             <li><i className="fa fa-check" aria-hidden="true"></i> Events</li>
             <li><i className="fa fa-check" aria-hidden="true"></i> Scalable Architecture</li>
           </ul>
+          <p>Local storage is used to persist goals</p>
           <Footer />
         </div>
       </div>
